@@ -41,8 +41,8 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: './public',
-    assetsDir: 'static',
+    outDir: '../dist',
+    assetsDir: 'src/assets',
     rollupOptions: {
       plugins: [
         {
