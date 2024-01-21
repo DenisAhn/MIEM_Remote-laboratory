@@ -30,6 +30,7 @@
     "react-player": "^2.14.1",
     "react-router-dom": "^6.21.1",
     "simplebar-react": "^3.2.4",
+    "terser": "^5.27.0",
     "video-react": "^0.16.0",
     "video.js": "7.15.4",
     "videojs-contrib-hls": "5.15.0"
