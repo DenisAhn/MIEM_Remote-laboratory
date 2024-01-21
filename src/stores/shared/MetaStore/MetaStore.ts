@@ -1,7 +1,6 @@
 import { action, computed, makeObservable, observable } from 'mobx';
 
 import { ILocalStore } from 'stores/interfaces';
-import { noop } from 'utils/noop';
 
 import {
   getInitialMetaState,
@@ -18,7 +17,7 @@ import {
 export class MetaStore implements ILocalStore {
   data: Meta;
 
-  destroy = noop;
+  destroy: () => void;
   constructor(meta?: Meta) {
     this.data = meta || getInitialMetaState();
 
