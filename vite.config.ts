@@ -4,7 +4,6 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import checker from 'vite-plugin-checker';
 import svgr from 'vite-plugin-svgr';
-import mkcert from 'vite-plugin-mkcert';
 import paths from 'vite-tsconfig-paths';
 import tsconfig from './tsconfig.json';
 
@@ -34,7 +33,6 @@ export default defineConfig({
       overlay: false,
     }),
     paths(),
-    mkcert(),
   ],
   resolve: {
     alias: {
