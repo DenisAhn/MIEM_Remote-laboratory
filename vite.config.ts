@@ -7,6 +7,7 @@ import svgr from 'vite-plugin-svgr';
 import paths from 'vite-tsconfig-paths';
 import tsconfig from './tsconfig.json';
 
+
 const SRC_PATH = path.resolve(__dirname, 'src');
 
 const parseTsConfigPaths = (
@@ -42,7 +43,7 @@ export default defineConfig({
   },
   build: {
     outDir: '../dist',
-    assetsDir: 'src/assets',
+    assetsDir: './src/assets', // изменено на './src/assets'
     rollupOptions: {
       plugins: [
         {
@@ -58,6 +59,7 @@ export default defineConfig({
       ],
     },
   },
+
   optimizeDeps: {
     include: ['react', 'react-dom'],
   },
