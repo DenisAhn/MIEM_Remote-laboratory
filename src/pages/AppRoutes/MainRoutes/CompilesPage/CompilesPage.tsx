@@ -21,6 +21,9 @@ function createData(
     return { number, date, time, compile, video, details };
 }
 
+
+
+
 const rows = [
     createData(1,'10.01.2024', '19:20', 'log.txt', 'video.mp4', 'Демо '),
     createData(2, '11.01.2024', '20:30', 'log2.txt', 'video2.mp4', 'Демо'),

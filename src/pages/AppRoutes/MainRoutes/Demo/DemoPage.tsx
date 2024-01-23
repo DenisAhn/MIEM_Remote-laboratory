@@ -88,7 +88,7 @@ const DemoPage = () => {
                     <Button startIcon={<Stop />} onClick={stopEffect}></Button>
                     <IconButton onClick={restartEffect} size="small">
                         <Replay />
-                    </IconButton>
+                    </  IconButton>
                 </Stack>
                 <Typography variant='h6' sx={{ml: 4, mb: 2}}>Время:  {currentSecond} </Typography>
                 <Box
